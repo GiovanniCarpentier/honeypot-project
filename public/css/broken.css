@@ -1,0 +1,9 @@
+.moveRight{
+    display: right;
+}
+body{
+    width: 100%;
+}
+main{
+    margin-left: 2em;
+}

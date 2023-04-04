@@ -1,0 +1,154 @@
+:root{
+    --headerColor: #374785;
+    --darkBackground: #24305E;
+    --itemColor: #A8d0E6;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    background-color: var(--darkBackground);
+}
+.landing{
+    margin-left: 250%;
+}
+header{
+    box-sizing: border-box;
+    display: flex;
+    grid-area: header;
+    background-color: var(--headerColor);
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+header img{
+    width: 5rem;
+    display: inline-block;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 3rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+main{
+    grid-area: main;
+    margin-bottom: 5rem;
+}
+
+#MainContainer{
+    width: 70%;
+    padding-top: 5rem;
+    margin: 0 auto 0 auto;
+}
+
+#MainContainer label{
+    display: block;
+    color: white;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#SearchItem{
+    height: 3rem;
+    font-size: 1.3rem;
+    width: 30rem;
+}
+
+#ItemContainerHeader{
+    background-color: var(--headerColor);
+    width: 100%;
+    color: white;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 0 1rem 1rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#ItemContainerHeader h2{
+    font-size: 2.5rem;
+}
+
+#ItemContainer{
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#LandingContainer{
+    margin: 5rem auto 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+#LandingContainer img{
+    margin: 4rem auto 4rem auto;
+    width: 25%;
+    display: block;
+}
+
+#LandingContainer a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+    background-color: var(--headerColor);
+    padding: 15px 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+#LandingContainer a:hover{
+    background: #EBA937;
+}
+
+.Item{
+    box-sizing: border-box;
+    flex-shrink: 1;
+    flex-grow: 1;
+    background-color: var(--headerColor);
+    width: 25rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 0.25rem;
+
+    color: white;
+}
+
+.Item img{
+    display: block;
+    width: 70%;
+    margin: 0 auto 0 auto;
+
+}
+
+.ItemDescription {
+    text-align: center;
+    width: 70%;
+    margin: 2rem auto 2rem auto;
+}
+
+.ItemDescription h2{
+    font-size: 2rem;
+}
+
+.ItemDescription p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+footer{
+    grid-area: footer;
+}
+

@@ -1,0 +1,15 @@
+
+body{
+    height: 100vh;
+    background: url("../img/winniethepooh.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 6rem;
+    padding-top: 3rem;
+}
